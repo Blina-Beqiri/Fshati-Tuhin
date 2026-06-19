@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+.title {
+    text-align: center;
+    font-size: 42px;
+    color: #8a0202;
+    margin: 30px 0;
+}
+.grid {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px;
+}
+
+.cardd {
+    background: rgb(255, 236, 236);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(213, 3, 3, 0.15);
+    transition: 0.3s;
+}
+
+.cardd:hover {
+    transform: translateY(-5px);
+}
+
+.cardd img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.cardd h2 {
+    margin: 10px;
+    color: #9d0000;
+}
+
+.cardd p {
+    margin: 10px;
+    color: #333;
+    line-height: 1.5;
+}
+
+.footer-section {
+    width: 90%;
+    max-width: 1100px;
+    margin: 60px auto;
+    text-align: center;
+}
+
+.footer-section h2 {
+    color: #a90000;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.footer-section p {
+    color: #333;
+    line-height: 1.8;
+    font-size: 18px;
+    max-width: 900px;
+    margin: auto;
+}
+
+#home{
+  text-decoration: none;
+  color: white;
+  background: rgb(151, 2, 2);
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+
+
+
+nav {
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 0px;
+}
+
+@media (max-width: 850px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+    .grid {
+        width: 95%;
+    }
+    .cardd img {
+        height: auto;
+        aspect-ratio: 4/3;
+    }
+    .title {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+    nav ul li {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .footer-section h2 {
+        font-size: 26px;
+    }
+}
+    </style>
+</head>
+<body>
+
+    <button id="toggleMode">Dark Mode</button>
+     <nav>
+        <div class="logo">  TUHINI
+        <ul>
+            <li><a href="historia.html">Historia</a></li>
+            <li><a href="natyra.html">Natyra</a></li>
+            <li><a href="traditat.html">Traditat</a></li>
+            <li><a href="vendbanimet.html">Vendbanimet</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li> <a id="home" href="index.html">Home</a></li>
+        </ul>
+    </nav>
+      <div class="lart" onclick="shkoPoshte()">
+    <h1>⬇</h1>
+</div>
+    <!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <title>Natyra e Fshatit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1 class="title">Natyra e Fshatit Tuhin</h1>
+
+    <div class="grid">
+
+        <div class="cardd">
+            <img src="malet2.jpg">
+            <h2>Malet</h2>
+            <p>
+               Pjesa malore e Tuhinit përfshin një numër të madh rajonesh med rëndësi historike dhe ekonomike për banorët e fshatit. Në këto zona gjendeshin ara, livadhe, pyje, burime uji dhe kullosa që shfrytëzoheshin për bujqësi, blegtori dhe grumbullimin e druve.
+Ara e Gjatë ishte një zonë që dikur punohej me drithëra, ndërsa sot pjesërisht është kthyer në livadh dhe pyll. Përreth saj ndodheshin vende si Bubona, Portat dhe Sheshet, të njohura për burimet e ujit në të cilat gjenden shumë kroje dhe janë rrugët që lidhnin Tuhinin met fshatrat përreth.
+Rajone si Murnishtat, Fusha e Përtejme dhe Fusha e Derrave ruajnë gjurmë të vendbanimeve të vjetra dhe lidhen me gojëdhëna të trashëguara brez pas brezi. Në këto zona gjendeshin kroje, pemë frutore dhe kullosa të përdorura nga banorët dhe bagëtitë.
+Një rëndësi të veçantë kishin Elbnojet, të njohura për kultivimin e elbit dhe kullotat e pasura verore. Po ashtu, rajoni i Hasket shquhej për gështenjat, livadhet dhe tokat bujqësore që shfrytëzoheshin nga banorët vendas.
+Në këto vise ruhen edhe shumë toponime me vlerë historike, si Shpella e Vjazës, Guri i Falkoit, Panagjyra dhe Guri i Popit, të cilat lidhen me legjenda dhe ngjarje nga e kaluara e fshatit.
+Këto rajone përbëjnë një pjesë të rëndësishme të trashëgimisë natyrore dhe kulturore të Tuhinit, duke dëshmuar mënyrën e jetesës, punës dhe organizimit të banorëve ndër shekuj.
+            </p>
+        </div>
+
+        <div class="cardd">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTeaYflAqXXtQzoC0koE0wGnmwPbX8JSWDhXJFCfJ07q44O1s6g_Szr-JI&s=10">
+            <h2>Lumi i Tuhinit dhe përrenjtë</h2>
+            <p>!Fotoja do të zëvendësohet së shpejti!</p>
+            <p>Lumi i Tuhinit është një nga elementet më të rëndësishme natyrore të fshatit Tuhin. Ai buron nga mali i Çelojcës, nga shumë burime dhe kroje të vogla, dhe formohet si lumë kryesisht në zonën e Hurdhës së Rekës. Më pas kalon nëpër gjithë fshatin Tuhin dhe vazhdon drejt fshatrave të tjerë derisa bashkohet me lumin e Zajazit dhe derdhet në lumin Treska.
+Në vitin 1963, pushteti i kohës e emërtoi gabimisht me emrin “Errësira”, burim banorët vazhdojnë ta njohin me emrin e vjetër “Lumi i Tuhinit”.
+Ky lumë ka pasur rëndësi të madhe për jetën e banorëve:
+shërbente për ujë të pijshëm për kafshët,
+përdorej për vaditjen e tokave bujqësore,
+vihej në lëvizje mullinjve për bluarjen e drithërave,
+shërbente për larje dhe freskim në verë.
+Rreth lumit ishin ndërtuar shumë vija ujitëse (jaze) që çonin ujin në ara të ndryshme si Jabelli, Bashet, Dardhëzele, Plugët, Fusha e Zallit dhe zona të tjera. Këto vija ishin shumë të rëndësishme për bujqësinë dhe shpesh përdoroheshin sipas rregullave të caktuara (ditë ose natë).
+Po ashtu, në këtë zonë gjenden shumë përrenj dhe burime si:
+Përroi i Verrive
+Përroi i Bashe
+përroi i Lie
+Përroi i Vesele
+përroj Mete-Bashe
+Përroi i Kaleshe
+përroi i Fkellë
+Përroi i Haske
+Shumë prej tyre janë të lidhur me lumen dhe ndihmojnë në ujitje, burim disa janë të thatë në verë dhe aktivizohen vetëm gjatë shirave të mëdha, duke shkaktuar ndonjëherë edhe dëme.
+Sot, lumi ka pësuar ndotje dhe ndryshime, burim mbetet një pjesë shumë e rëndësishme e historisë, jetës dhe bujqësisë së Tuhinit.
+            </p>
+        </div>
+
+        <div class="cardd">
+            <img src="img10fushat.jpg">
+            <h2>Gjelbërimi</h2>
+            <p>Fshati Tuhin dallohet për një gjelbërim të pasur dhe të larmishëm, i cili shtrihet në të gjitha anët e tij, nga luginat pranë lumit e deri në kodrat dhe malet përreth.
+            </p>
+        </div>
+
+        <div class="cardd">
+            <img src="img8guret.jpg">
+            <h2>Guret e vjeter</h2>
+            <p>
+                 Vjetërsinë e Tuhinit e tregojnë edhe gurët e vjetër. Në foto mund të shihni disa prej tyre.
+            </p>
+        </div>
+
+    </div>
+
+<div class="footer-section">
+
+    
+<h2>Flora dhe fauna e fshatit Tuhin</h2>
+<p>
+Fshati Tuhin është i rrethuar nga mali i Çelojcës dhe ka një natyrë shumë të pasur me gjelbërim, kullosa dhe pyje. Ky vend ofron kushte të mira për zhvillimin e florës dhe faunës.
+Bimësia (flora)
+Në këtë fshat gjenden shumë lloje barishtesh dhe bimësh si: tërfili, tërfonja, posi dhe lloje të ndryshme bari që shërbejnë për ushqimin e kafshëve.
+Po ashtu ka shumë lloje drunjsh si: lisi, ahu, bunga, çarri, shkoza, frashëri, shelgu, verri, lajthia, plepi dhe murrizi.
+Në fshat gjenden edhe drunj frutorë si: molla, dardha, qershia, kumbulla, arra dhe gështenja.
+Rriten edhe fruta të egra si: dredhëza, manaferra, boronica dhe lloje të tjera pyjore.
+Po ashtu ka kërpudha të ndryshme të cilat përdoren për ushqim.
+Bujqësia
+Banorët kultivojnë drithëra si: grurë, elb, thekër, tërshërë dhe misër.
+Po ashtu mbillen perime si: patate, speca, domate, lakër, qepë, hudhër, shalqi dhe kunguj. Fauna (kafshët)
+Fshati është i pasur edhe me kafshë të egra si: lepuri, dhelpra, ujku, derri i egër, ariu dhe kaprolli.
+Shpendë të ndryshëm si: shqiponja, skifteri, thëllëza, korbi, lejleku dhe dallëndyshja.
+Ka edhe zvarranikë si gjarpërinjtë dhe hardhucat.
+Në lumenj gjenden peshq si trofta dhe krapi.
+Kafshët shtëpiake janë: lopë, dele, dhi, kuaj, gomarë, pula, pata dhe rosa.</p>
+
+    <h2>Natyra është pasuria e fshatit tonë!</h2>
+
+    <p>
+        Natyra e fshatit Tuhin është një thesar i çmuar që e zbukuron jetën e
+        banorëve çdo ditë. Malet, fushat e gjelbra, ajri i pastër dhe qetësia
+        që ofron ky vend krijojnë një ambient të veçantë për jetesë dhe
+        pushim. Bukuritë natyrore të fshatit janë një pjesë e rëndësishme e
+        identitetit të tij dhe mbeten një arsye krenarie për çdo banor të
+        Tuhinit.
+    </p>
+
+</div>
+<div class="poshte" onclick="shkoLart()">
+    <h1>⬆</h1>
+</div>
+<script>
+const btn = document.getElementById("toggleMode");
+
+btn.addEventListener("click", function () {
+
+    document.body.classList.toggle("dark");
+
+    if(document.body.classList.contains("dark")){
+        btn.textContent = "Light Mode";
+    } else {
+        btn.textContent = "Dark Mode";
+    }
+
+});
+
+function shkoPoshte() {
+    window.scrollTo({
+        top: document.body.scrollHeight,
+        behavior: "smooth"
+    });
+}
+
+function shkoLart() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+}
+</script>
+
+</body>
+</html>

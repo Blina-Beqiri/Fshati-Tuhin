@@ -1,0 +1,220 @@
+:root{
+    --primary: #a60303;
+    --secondary: #fdfaf9;
+    --text: #0e0d0d;
+    --white: #fbf6f6;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--text);
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+/* --- Navigation --- */
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding: 15px 5%;
+    background:var(--white);
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 2px 10px rgba(0,0,0,0.05);
+}
+
+.logo{
+    font-size: 1.3rem;
+    font-weight:bold;
+    letter-spacing: 2px;
+    color:var(--primary);
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    align-items:center;
+}
+
+nav ul li{
+    margin-left: 20px;
+}
+
+nav a{
+    text-decoration:none;
+    color:var(--text);
+    font-weight:500;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:var(--primary);
+}
+
+/* --- Main / Hero Section --- */
+.main{
+    min-height: 70vh;
+    height: auto;
+    padding: 40px 20px;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://upload.wikimedia.org/wikipedia/commons/6/63/%D0%9F%D0%BE%D0%B3%D0%BB%D0%B5%D0%B4_%D0%BD%D0%B0_%D0%A2%D1%83%D0%B8%D0%BD.jpg');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.main h1{
+    font-size: 2.2rem;
+    margin-bottom:15px;
+    text-shadow:2px 2px 10px rgba(0,0,0,0.6);
+}
+
+.main p{
+    font-size: 1rem;
+    max-width:700px;
+    background:rgba(0,0,0,0.5);
+    padding:15px;
+    border-radius:10px;
+}
+
+p {
+    font-size: 16px;
+}
+
+/* --- Cards Layout --- */
+.cards{
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: 1fr; /* Single column by default on mobile */
+    gap: 20px;
+}
+
+.card{
+    background: rgb(248, 223, 223);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* --- UI Elements & Buttons --- */
+.btn{
+    display: inline-block;
+    padding: 12px 20px;
+    background: #b30000;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s ease;
+    text-align: center;
+}
+
+.btn:hover{
+    background: #800000;
+    transform: translateY(-2px);
+}
+
+#toggleMode, #topBtn {
+    position: fixed;
+    bottom: 20px;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    background: darkred;
+    color: white;
+    border-radius: 8px;
+    z-index: 10;
+    font-size: 0.9rem;
+}
+
+#toggleMode {
+    right: 20px;
+}
+
+#topBtn {
+    left: 20px;
+    display: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+}
+
+.lart, .poshte {
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+}
+
+/* --- Footer --- */
+footer{
+    text-align:center;
+    padding: 30px 20px;
+    background: #880000;
+    color: #ffffff;
+    font-size: 0.9rem;
+} 
+
+body.dark { background: #121212; color: white; }
+body.dark nav { background: #1e1e1e; }
+body.dark .card { background: #2a2a2a; color: white; }
+body.dark a { color: white; }
+
+
+
+@media (min-width: 768px) {
+    nav {
+        padding: 20px 8%;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .main {
+        height: 80vh;
+    }
+
+    .main h1 {
+        font-size: 3.5rem;
+    }
+
+    .main p {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+
+    .card {
+        padding: 25px;
+    }
+}
+
+
+@media (min-width: 1200px) {
+  
+}

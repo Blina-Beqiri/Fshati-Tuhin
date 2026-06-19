@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mehallat e Tuhinit</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+.hero{
+    background: darkred;
+    color: white;
+    text-align: center;
+    padding: 30px 10px;
+}
+
+.info{
+    text-align: center;
+    margin: 20px auto;
+    width: 80%;
+}
+
+.images-top{
+    display: flex;
+    gap: 10px;
+    width: 90%;
+    margin: 20px auto;
+}
+
+.images-top img{
+    width: 50%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+
+
+#home{
+  text-decoration: none;
+  color: white;
+  background: rgb(151, 2, 2);
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+
+
+
+nav {
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 0px;
+}
+
+@media (max-width: 768px) {
+    .images-top {
+        flex-direction: column;
+    }
+    .images-top img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16/10;
+    }
+    .info {
+        width: 95%;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+    nav ul li {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+    </style>
+</head>
+
+<body>
+    <button id="toggleMode">Dark Mode</button>
+    <nav>
+        <div class="logo">  TUHINI
+        <ul>
+            <li><a href="historia.html">Historia</a></li>
+            <li><a href="natyra.html">Natyra</a></li>
+            <li><a href="traditat.html">Traditat</a></li>
+            <li><a href="vendbanimet.html">Vendbanimet</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+             <li> <a id="home" href="index.html">Home</a></li>
+            
+        </ul>
+    </nav>
+
+     <div class="lart" onclick="shkoPoshte()">
+    <h1>⬇</h1>
+</div>
+    <header class="hero">
+        <h1 style="font-size: 50px;">Vendbanimet e Fshatit Tuhin</h1>
+        <p>
+Fshati Tuhin ka një histori shumë të gjatë dhe të pasur, e cila dëshmohet përmes shumë vendbanimeve të vjetra që sot janë kthyer në gërmadha, burim ende ruhen në kujtesën e banorëve dhe në gjurmët e tokës. Këto vendbanime tregojnë jetën e hershme, mënyrën e ndërtimit të shtëpive, zhvendosjet e popullsisë dhe zhvillimin e kësaj treve ndër shekuj.
+Në lashtësi, fusha e Kërçovës mendohet se ka qenë liqen, ndërsa më vonë është shndërruar në tokë të banueshme. Vendbanimet e para nuk janë zhvilluar në fshatin e sotëm, burim në zona më të larta dhe të mbrojtura, si malet e Çelojcës dhe rreth vendit të quajtur Gjyteci (Qyteti), i cili lidhet edhe me rrugën e vjetër romake Via Egnatia. Ky vend ka shërbyer si pikë strategjike për karvanë dhe udhëtarë, si vend pushimi dhe furnizimi me ujë.</p>
+    </header>
+
+    <div class="images-top">
+
+        <img src="img1.jpg">
+
+        <img src="img2.jpg">
+
+    </div>
+
+    <div class="container">
+
+        <div class="info">
+            <p>
+              Banesat e moçme
+Banorët e hershëm të Tuhinit kanë jetuar në lloje të ndryshme shtëpish:
+shtëpi katërkëndëshe med çardak, me gur dhe dru, me dy kate, me dhoma për fjetje, kuzhinë, hambar dhe oborr (lomë);
+shtëpi më të thjeshta “jaranina”, për familje më të varfra;
+kasolle prej druri, thupra dhe balte, të mbuluara me kashtë thekre, që shërbenin edhe për njerëz edhe për bagëti;
+më vonë edhe shtëpi me vatër dhe ndarje të brendshme, me oxhak në çdo dhomë.
+            </p>
+        </div>
+
+        <h1 style="text-align: center; color: rgb(144, 0, 0);">Disa vendbanime</h1>
+        <div class="card">
+            <h2>Shumjaku</h2>
+            <p>
+Shumjaku është një vend që, sipas gojëdhënave , e ka marrë emrin nga familja Jaku dhe nga fjala 'shumë', që lidhet me pyllin e dendur që ka karakterizuar këtë zonë. Me kalimin e kohës emri është ndryshuar në Shumjak/Shumjaku. Sot njihet si vend me histori familjare dhe gjurmë të vjetra banimi.</p>
+        </div>
+
+        
+        <div class="card">
+            <h2>Murrnejshtat</h2>
+            <p>
+Vendbanim i lashtë ku ende shihen mure të rrënuara dhe themele shtëpish. Dëshmon për një vend të banuar më herët me shtëpi të ndërtuara me gur dhe jetë të organizuar. Sot është zonë me rrënoja dhe tokë të hapur.
+</p>
+        </div>
+
+         <div class="card">
+            <h2>Trojet e Vogla</h2>
+            <p>
+Vendbanim i zhdukur ku dikur ka pasur shtëpi dhe varreza. Banorët janë shpërngulur dhe sot zona është kthyer në livadhe. Gjurmët e banimit ende shihen në tokë dhe në rrëfimet e të moshuarve.</p>
+        </div>
+
+        
+        <div class="card">
+            <h2>Kësollat e Stafe</h2>
+            <p>
+Vendbanim i lidhur me familjen Stafe. Shtëpitë kanë qenë kasolle të thjeshta prej guri, druri dhe kashtë, ku banorët janë marrë kryesisht me blegtori dhe kanë jetuar sezonalisht në atë zonë.</p>
+        </div>
+
+        
+        <div class="card">
+            <h2>Trojet e Mëdha (Hasket)</h2>
+            <p>Vendbanim i vjetër me gjurmë shtëpish dhe varreza. Ka qenë zonë e banuar më herët, burim banorët janë shpërngulur me kohën për shkak të kushteve dhe jetës së vështirë.</p>
+        </div> 
+
+         <div class="card">
+            <h2>Kësollat e Bashe</h2>
+            <p>
+Vendbanim ku kanë jetuar familje të ndryshme dhe ku sot gjenden ende rrënoja. Nga ky vend janë formuar lagjet e sotme Bashet e Epërme dhe Bashet e Poshtme.</p>
+        </div>
+
+         <div class="card">
+            <h2>Gjyteci (Qyteti)</h2>
+            <p>
+Nj0 nga vendbanimet më të lashta të Tuhinit. Ka qenë vend strategjik për karvanë dhe udhëtarë që kalonin nëpër rrugën Via Egnatia. Sot gjenden gurë të shpërndarë, themele shtëpish dhe një krua i vjetër që dëshmon jetën e hershme.
+Vendbanimet e tjera gërmadha
+</p>
+        </div>
+
+        
+         <div class="card">
+            <h2>Breqoni (Breqani)</h2>
+            <p> 
+Vendbanim i formuar nga familja Braja/Breqani. I njohur për blegtori të zhvilluar, pasuri me bagëti dhe jetesë aktive tregtare. Më vonë është përfshirë në konflikte dhe shpërngulje, burim emri dhe historia e tij kanë mbetur të njohura në zonë.</p>
+        </div>
+
+
+         <h1 style="text-align: center; color: rgb(137, 0, 0);">Zona që janë përdorur për agrokulturë</h1>
+         <p>
+Fshati Tuhin ka pasur një traditë të pasur bujqësore, ku pothuajse çdo pjesë e tokës është shfrytëzuar për kultivimin e bimëve dhe rritjen e bagëtive. Banorët mbillnin kryesisht grurë, thekër, tërshërë, elb dhe misër, ndërsa livadhet dhe kullosat përdoreshin për ushqimin e kafshëve.</p>
+
+        <div class="card">
+            <h2>Janidolli</h2>
+            <p>zona më e madhe bujqësore, ku mbilleshin gruri, thekra, tërshëra, elbi dhe misri. Ndahej në Janidoll të Poshtëm, të Mesëm dhe të Epërm. Kishte burime uji dhe kullosa për kafshët.</p>
+        </div>
+
+        
+        <div class="card">
+            <h2>Sllatejnat</h2>
+            <p> ara ku mbilleshin kryesisht drithëra të thata, ndërsa në disa vende edhe misër. Kishte puse për ujitjen e tokës.</p>
+        </div>
+
+        
+        <div class="card">
+            <h2>Jabelli</h2>
+            <p>tokë shumë pjellore me ara dhe livadhe. Përdorej për misër, drithëra dhe për kositjen e barit për bagëtinë. Kishte edhe puse për vaditje.</p>
+        </div>
+
+        
+        <div class="card">
+            <h2>Lisi i Xhypit </h2>
+            <p>zonë ku mbillej misër dhe drithëra. Emrin e mori nga një farkëtar shëtitës që qëndronte çdo verë nën një lis të madh dhe u shërbente banorëve.</p>
+        </div>
+
+        
+        <div class="card">
+            <h2>Shumjaku </h2>
+            <p>rajon me pyje lisi dhe kullosa, i rëndësishëm për blegtorinë. Banorët përdornin degët e lisit si ushqim dimëror për dhitë dhe delet.</p>
+        </div>
+
+        
+        <div class="card">
+            <h2>Lugjata</h2>
+            <p>zonë kodrinore ku mbilleshin drithëra të thata dhe kishte livadhe e pemë frutore.</p>
+        </div>
+
+        
+        <div class="card">
+            <h2>Limoja</h2>
+            <p>dikur kullosë, më pas u shndërrua në ara. Sot shumica e tokës ka mbetur djerrinë.</p>
+        </div>
+
+          <div class="card">
+            <h2>Kësolla e Djegëme</h2>
+            <p>zonë që e mori emrin nga djegia e një kasolleje. Dikur mbillej med drithëra, ndërsa sot ka shumë shtëpi dhe toka të papunuara.
+</p>
+        </div>
+
+          <div class="card">
+            <h2>Karamançishtja</h2>
+            <p> tokë pjellore me sistem vaditjeje, ku mbillej kryesisht misër.</p>
+        </div>
+
+
+          <div class="card">
+            <h2>Rrasat</h2>
+            <p> ara dhe kullosa ku dikur kishte shumë pemë frutore, sidomos dardha.</p>
+        </div>
+
+        
+        <div class="card">
+            <h2>Perroi i Jovis</h2>
+            <p> vend kodrinor që dikur punohej, burim sot është kryesisht i pashfrytëzuar.</p>
+        </div>
+
+        
+        <div class="card">
+            <h2>Plugat</h2>
+            <p>tokë shumë pjellore e ujitur, ku mbillej misër, groshë, kunguj dhe lakra. Emri lidhet me përdorimin e plugut.</p>
+        </div>
+
+        
+        <div class="card">
+            <h2>Ogradet e Basheve të Poshtme</h2>
+            <p> zonë pranë lumit që më parë mbillej me misër dhe grurë, ndërsa sot është kryesisht livadh.</p>
+        </div>
+
+          <div class="card">
+            <h2>Ara e Gjatë</h2>
+            <p> tokë ku mbilleshin drithëra të thata; sot pjesërisht është e mbuluar me pisha dhe nuk punohet shumë.</p>
+        </div>
+
+          <div class="card">
+            <h2>Dardhezela</h2>
+            <p>ipas një gojëdhëne të vjetër, ky vend e ka marrë emrin nga një dardhë që ishte shumë e shijshme dhe piqej në fund të verës. Kur dardhat binin në tokë, ato ndaheshin në katër pjesë dhe brenda tyre hynin bletët për shkak të ëmbëlsisë së madhe. Njerëzit që i provonin këto dardha shpesh pickoheshin nga bletët dhe, nga dhimbja, thërrisnin med zë: 'Oh, ze, ze, ze!'. Thuhet se pikërisht nga kjo ngjarje dhe kjo shprehje lindi emri i vendit, i cili është ruajtur deri në ditët e sotme.</p>
+        </div>
+
+          <div class="card">
+            <h2>Fusha e Zallit</h2>
+            <p> qendra e fshatit, pranë lumit. Këtu ndodhen shkolla, rrënojat e kishës së vjetër dhe varrezat e lashta. POashtu ndahet ne tri pjese: Kopshnije, Ura e Vesele dhe Nën Rrugen e Vesele.</p>
+        </div>
+
+    
+
+
+
+
+
+        <h1 style="text-align: center; color: rgb(137, 0, 0);">Mehallat</h1>
+        <div class="card">
+            <h2>1. Stafet</h2>
+        </div>
+
+        <div class="card">
+            <h2>2. Bashet</h2>
+        </div>
+
+        <div class="card">
+            <h2>3. Zenelet</h2>
+        </div>
+
+        <div class="card">
+            <h2>4. Metet</h2>
+        </div>
+
+        <div class="card">
+            <h2>5. Hysët</h2>
+        </div>
+
+        <div class="card">
+            <h2>6. Demirët</h2>
+        </div>
+
+        <div class="card">
+            <h2>7. Tahejret</h2>
+        </div>
+
+        <div class="card">
+            <h2>8. Lagja e Epërme</h2>
+        </div>
+
+        <div class="card">
+            <h2>9. Kaleshet</h2>
+            <p>Alie Miftare, Afmetovare, Limone.</p>
+        </div>
+
+        <div class="card">
+            <h2>10. Haske</h2>
+            <p>Fundi i fshatit Tuhin.</p>
+        </div>
+
+        <div class="card">
+            <h2>11. Lagja e Re</h2>
+        </div>
+
+        <div class="card">
+            <h2>12. Të tjera</h2>
+            <p>Skourret, Sulet, Ouket, Breqonet.</p>
+        </div>
+
+    </div>
+    <div class="poshte" onclick="shkoLart()">
+    <h1>⬆</h1>
+</div>
+<script>
+const btn = document.getElementById("toggleMode");
+
+btn.addEventListener("click", function () {
+
+    document.body.classList.toggle("dark");
+
+    if(document.body.classList.contains("dark")){
+        btn.textContent = "Light Mode";
+    } else {
+        btn.textContent = "Dark Mode";
+    }
+
+});
+
+function shkoPoshte() {
+    window.scrollTo({
+        top: document.body.scrollHeight,
+        behavior: "smooth"
+    });
+}
+
+function shkoLart() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+}
+</script>
+</body>
+</html>

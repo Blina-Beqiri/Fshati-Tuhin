@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traditat e Fshatit Tuhin</title>
+
+    <link rel="stylesheet" href="style.css">
+
+
+
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+
+.hero{
+    background-image: url("images/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(153, 0, 0);
+}
+
+
+.container{
+    width: 90%;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.card{
+    background: rgb(248, 219, 219);
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.card img{
+    width: 35%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+.content{
+    width: 65%;
+}
+
+.card h2{
+    color: darkred;
+    margin-bottom: 10px;
+}
+
+.card ul{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.card li{
+    margin-bottom: 8px;
+}
+
+
+footer{
+    background: darkred;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+#home{
+  text-decoration: none;
+  color: white;
+  background: rgb(151, 2, 2);
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+
+
+
+nav {
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 0px;
+}
+
+@media (max-width: 850px) {
+    .card {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .card img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16/10;
+    }
+    .content {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+    nav ul li {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .container {
+        width: 95%;
+    }
+}
+</style>
+</head>
+<body> 
+     
+    <button id="toggleMode">Dark Mode</button>
+    <nav>
+        <div class="logo">  TUHINI
+        <ul>
+            <li><a href="historia.html">Historia</a></li>
+            <li><a href="natyra.html">Natyra</a></li>
+            <li><a href="traditat.html">Traditat</a></li>
+            <li><a href="vendbanimet.html">Vendbanimet</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+             <li> <a id="home" href="index.html">Home</a></li>
+            
+        </ul>
+    </nav>
+     <div class="lart" onclick="shkoPoshte()">
+    <h1>⬇</h1>
+</div>
+    <header class="hero">
+    <div class="overlay">
+        <h1>Traditat e Fshatit Tuhin</h1>
+        <p>Kultura, zakonet dhe historia që ruhen brez pas brezi.</p>
+    </div>
+</header>
+
+<div class="container">
+
+    <div class="card">
+
+        <img src="https://al.mrt.com.mk/sites/default/files/9_146.jpg" alt="Dasma Tradicionale">
+
+        <div class="content">
+            <h2>Dasmat Tradicionale</h2>
+
+            <p>
+                Më parë dasmat në Tuhin dhe në gjithë Kërçovën kanë zgjatur
+                një javë të plotë, nga dita e hënë deri të shtunën.
+                Çdo ditë ka pasur zakonet dhe traditat e veta që janë ruajtur
+                brez pas brezi.
+            </p>
+
+            <ul>
+                <li><strong>E hënë:</strong> Njerëzit nga ana e burrit kanë dërguar “qezën” te familja e nuses.</li>
+
+                <li><strong>E martë:</strong> Në mbrëmje nusja është ulur pranë oxhakut dhe ka qarë sepse do të largohej nga familja e saj. Pranë saj kanë qëndruar dy të afërme.</li>
+
+                <li><strong>E mërkurë:</strong> Nusja ka darkuar me shoqet, familjarët dhe të afërmit. Kjo natë ka qenë si përshëndetje para martesës, e ngjashme me kanagjegjin e sotëm.</li>
+
+                <li><strong>E enjte:</strong> Krushqit kanë marrë nusen së bashku me pajën dhe qerren.</li>
+
+                <li><strong>E premte:</strong> Është bërë dasma med këngë dhe valle tradicionale. Në mbrëmje nusja është ulur për herë të parë në tryezën e familjes së burrit.</li>
+
+                <li><strong>E shtunë:</strong> Nuses i është dhënë ujë nga një ose tre djem të vegjël të familjes dhe këtu ka përfunduar ceremonia.</li>
+            </ul>
+
+            <p>
+                Dasmat janë shoqëruar me këngë kërçovare dhe instrumente
+                tradicionale si dahirja, tupani dhe çiftelia.
+                Gjithashtu kanë kënduar edhe banorë të ndryshëm të fshatit.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="card">
+
+        <img src="veshjet.jpg">
+        <div class="content">
+            <h2>Veshjet Tradicionale</h2>
+
+            <p>
+                Gratë dikur vishnin të gjatat kërçovare dhe dimijat,
+                ndërsa burrat vishnin tirqit tradicionalë.
+                Pleqtë zakonisht mbanin tirqe të zeza dhe strukë.
+            </p>
+
+            <p>
+                Sot këto veshje përdoren më rrallë,
+                por ato nuk janë harruar.
+                Njerëzit i veshin sidomos në dasma dhe festa tradicionale
+                për të ruajtur kulturën dhe traditat e fshatit.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="card">
+
+        <img src="https://i.ytimg.com/vi/XGjvi1LVows/hq720.jpg?sqp=-oaymwE7CK4FEIIDSFryq4qpAy0IARUAAAAAGAElAADIQj0AgKJD8AEB-AG2CIACuAiKAgwIABABGGUgXChCMA8=&rs=AOn4CLBVFPcReQf2Tz5Feb5QynPX3Gc7xA" alt="Ushqime Tradicionale">
+
+        <div class="content">
+            <h2>Ushqimet Tradicionale</h2>
+
+            <p>
+                Në Tuhin gatuhen ende shumë ushqime tradicionale si:
+                pitet e ndryshme, byreku, petullat tradicionale,
+                flijat dhe gjellë të ndryshme si gullashi,
+                grosha, jania, lakna dhe çorba.
+            </p>
+
+            <p>
+                Ndër ëmbëlsirat tradicionale përfshihen:
+                bakllavaja, sheqerparja, ravania,
+                sutliashi dhe jallonkat.
+                Gjithashtu përdorej edhe buka me maj.
+            </p>
+
+            <p>
+                Kur vinin mysafirë zakonisht përgatitej
+                birjani me mish, i shoqëruar me supë
+                dhe në fund shërbehej ëmbëlsirë.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="card">
+
+        <img src="https://ntv.al/wp-content/uploads/2022/10/bujk.jpg" alt="Jeta e Dikurshme">
+
+        <div class="content">
+            <h2>Puna dhe Jeta e Dikurshme</h2>
+
+            <p>
+                Banorët e fshatit Tuhin janë marrë kryesisht
+                me bujqësi dhe blegtori.
+                Fshati ka shumë ara dhe toka pjellore
+                të cilat dikur janë punuar vazhdimisht.
+            </p>
+
+            <p>
+                Banorët kanë mbjellur kultura të ndryshme
+                dhe janë kujdesur për lopë, dele dhe pula,
+                nga të cilat kanë siguruar ushqim dhe produkte të shumta.
+            </p>
+
+            <p>
+                Sot shumë toka nuk punohen më
+                dhe janë mbuluar me bar dhe shkurre,
+                sepse ka më pak njerëz që merren med bujqësi.
+            </p>
+
+            <p>
+                Shtëpitë dikur kanë qenë më të vjetra
+                dhe jeta më e vështirë,
+                por njerëzit kanë qenë shumë të afërt me njëri-tjetrin,
+                janë ndihmuar dhe kanë punuar së bashku.
+            </p>
+        </div>
+
+    </div>
+
+
+    <div class="card">
+
+        <img src="galeria4 buki.jpg">
+        <div class="content">
+            <h2>Gjuetia</h2>
+
+            <p>
+                Në fshatin Tuhin është e zhvilluar edhe gjuetia, për shkak të pozitës së favorshme gjeografike dhe pasurisë natyrore që e rrethon.
+            </p>
+
+            <p>
+                Shumë banorë e praktikojnë atë si hobi, ndërsa për të tjerë është një traditë e trashëguar brez pas brezi.
+            </p>
+
+            <p>
+                Gjuetia konsiderohet edhe si një aktivitet rekreativ që i afron njerëzit me natyrën dhe forcon lidhjet shoqërore mes pjesëmarrësve.
+            </p>
+
+            <p>
+                Kjo traditë vazhdon të ruhet dhe të kultivohet nga banorët e zonës, duke qenë pjesë e identitetit lokal.
+            </p>
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+    <p>Traditat janë pasuria më e madhe e një fshati.</p>
+</footer>
+<div class="poshte" onclick="shkoLart()">
+    <h1>⬆</h1>
+</div>
+<script>
+    
+function shkoPoshte() {
+    window.scrollTo({
+        top: document.body.scrollHeight,
+        behavior: "smooth"
+    });
+}
+
+function shkoLart() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+}
+</script>
+
+</body>
+</html>
